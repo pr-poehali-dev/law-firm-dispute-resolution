@@ -299,7 +299,7 @@ export default function Index() {
                 <span className="font-display text-electric text-xs tracking-[0.3em] uppercase">О нас</span>
               </div>
               <h2 className="font-display font-semibold text-4xl md:text-5xl text-white leading-tight mb-6">
-                15 лет <span className="text-electric">безупречной</span> репутации
+                25 лет <span className="text-electric">безупречной</span> репутации
               </h2>
               <p className="font-body font-light text-muted-foreground leading-relaxed mb-6 text-base">
                 LEXIS основана в 2009 году командой практикующих юристов с опытом в крупнейших международных фирмах. Мы специализируемся на сложных делах, где на кону — судьба бизнеса.
