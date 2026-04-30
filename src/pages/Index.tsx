@@ -249,7 +249,7 @@ export default function Index() {
             </h1>
 
             <p className="font-body font-light text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              AVG-Consult — команда экспертов, которые защищают бизнес и личные интересы с 2009 года. Выигрываем там, где другие сдаются.
+              AVG-Consult — команда экспертов, которые защищают бизнес и личные интересы с 2024 года. Выигрываем там, где другие сдаются.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
