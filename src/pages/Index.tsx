@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
+const FIRM_NAME = "AVG-Consult";
+
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/files/cebfe3bb-0bd5-4f30-a270-3af0d8424904.jpg";
 const TEAM_IMAGE = "https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/files/dc836cc8-046e-45f2-976f-c9421cbf80cf.jpg";
 
@@ -173,7 +175,7 @@ export default function Index() {
               <div className="w-8 h-8 gradient-electric flex items-center justify-center">
                 <span className="font-display font-bold text-white text-sm">L</span>
               </div>
-              <span className="font-display font-semibold text-xl tracking-widest text-white">LEXIS</span>
+              <span className="font-display font-semibold text-xl tracking-widest text-white">{FIRM_NAME}</span>
             </div>
 
             <div className="hidden md:flex items-center gap-8">
@@ -247,7 +249,7 @@ export default function Index() {
             </h1>
 
             <p className="font-body font-light text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              LEXIS — команда экспертов, которые защищают бизнес и личные интересы с 2009 года. Выигрываем там, где другие сдаются.
+              AVG-Consult — команда экспертов, которые защищают бизнес и личные интересы с 2009 года. Выигрываем там, где другие сдаются.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
@@ -324,7 +326,7 @@ export default function Index() {
             <div className="relative">
               <div className="absolute -inset-4 bg-electric/5 blur-2xl rounded-full" />
               <div className="relative border border-border overflow-hidden">
-                <img src={TEAM_IMAGE} alt="Команда LEXIS" className="w-full h-80 md:h-[500px] object-cover" />
+                <img src={TEAM_IMAGE} alt={`Команда ${FIRM_NAME}`} className="w-full h-80 md:h-[500px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="border border-electric/30 bg-background/80 backdrop-blur-sm px-5 py-4">
@@ -581,7 +583,7 @@ export default function Index() {
               <div className="w-7 h-7 gradient-electric flex items-center justify-center">
                 <span className="font-display font-bold text-white text-xs">L</span>
               </div>
-              <span className="font-display font-semibold text-lg tracking-widest text-white">LEXIS</span>
+              <span className="font-display font-semibold text-lg tracking-widest text-white">{FIRM_NAME}</span>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6">
@@ -597,7 +599,7 @@ export default function Index() {
             </div>
 
             <div className="font-body text-xs text-muted-foreground">
-              © 2009–2026 LEXIS. Все права защищены
+              © 2009–2026 {FIRM_NAME}. Все права защищены
             </div>
           </div>
         </div>
