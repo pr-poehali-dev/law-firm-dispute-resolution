@@ -117,7 +117,7 @@ const TEAM = [
 ];
 
 const STATS = [
-  { value: "97%", label: "Выигранных дел" },
+  { value: "91%", label: "Выигранных дел" },
   { value: "500+", label: "Клиентов" },
   { value: "15+", label: "Лет на рынке" },
   { value: "2 млрд", label: "Взыскано в пользу клиентов" },
