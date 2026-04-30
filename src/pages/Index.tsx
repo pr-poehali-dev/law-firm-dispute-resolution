@@ -172,10 +172,10 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("home")}>
-              <div className="w-8 h-8 gradient-electric flex items-center justify-center">
-                <span className="font-display font-bold text-white text-sm">L</span>
+              <div className="gradient-electric flex items-center justify-center px-2 py-1">
+                <span className="font-display font-bold text-white text-sm tracking-wider">AVG</span>
               </div>
-              <span className="font-display font-semibold text-xl tracking-widest text-white">{FIRM_NAME}</span>
+              <span className="font-display font-light text-base tracking-[0.15em] text-white/80">Consult</span>
             </div>
 
             <div className="hidden md:flex items-center gap-8">
@@ -580,10 +580,10 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-7 h-7 gradient-electric flex items-center justify-center">
-                <span className="font-display font-bold text-white text-xs">L</span>
+              <div className="gradient-electric flex items-center justify-center px-2 py-0.5">
+                <span className="font-display font-bold text-white text-xs tracking-wider">AVG</span>
               </div>
-              <span className="font-display font-semibold text-lg tracking-widest text-white">{FIRM_NAME}</span>
+              <span className="font-display font-light text-sm tracking-[0.15em] text-white/80">Consult</span>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6">
