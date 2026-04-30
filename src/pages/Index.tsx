@@ -310,7 +310,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-8">
                 {[
                   { icon: "Award", text: "Рейтинг Право-300" },
-                  { icon: "Users", text: "12 специалистов" },
+                  { icon: "Users", text: "Рейтинг Коммерсант" },
                   { icon: "MapPin", text: "Москва · СПб · Дубай" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
