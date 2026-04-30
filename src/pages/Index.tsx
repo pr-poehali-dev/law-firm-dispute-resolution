@@ -311,7 +311,7 @@ export default function Index() {
                 {[
                   { icon: "Award", text: "Рейтинг Право-300" },
                   { icon: "Users", text: "Рейтинг Коммерсант" },
-                  { icon: "MapPin", text: "Москва · СПб · Дубай" },
+                  { icon: "MapPin", text: "СПб" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-electric/10 border border-electric/30 flex items-center justify-center flex-shrink-0">
