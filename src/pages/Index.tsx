@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 const FIRM_NAME = "AVG-Consult";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/files/cebfe3bb-0bd5-4f30-a270-3af0d8424904.jpg";
-const TEAM_IMAGE = "https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/files/dc836cc8-046e-45f2-976f-c9421cbf80cf.jpg";
+const TEAM_IMAGE = "https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/bucket/7b7f5774-3ced-4de8-b70c-117a6b5fe749.JPG";
 
 const NAV_ITEMS = [
   { id: "home", label: "Главная" },
