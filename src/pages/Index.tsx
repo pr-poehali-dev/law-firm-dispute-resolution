@@ -120,7 +120,7 @@ const STATS = [
   { value: "91%", label: "Выигранных дел" },
   { value: "10+", label: "Клиентов" },
   { value: "10+ млрд", label: "Оборот клиентов в год" },
-  { value: "2 млрд", label: "Взыскано в пользу клиентов" },
+  { value: "50+ млн", label: "Сэкономлено клиентам" },
 ];
 
 function useScrollSpy() {
