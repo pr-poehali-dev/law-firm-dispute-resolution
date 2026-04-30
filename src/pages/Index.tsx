@@ -331,7 +331,7 @@ export default function Index() {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="border border-electric/30 bg-background/80 backdrop-blur-sm px-5 py-4">
                     <div className="font-display text-electric text-xs tracking-widest uppercase mb-1">Рейтинг 2025</div>
-                    <div className="font-body text-white text-sm">Топ-10 арбитражных фирм России по версии Право.Ру</div>
+                    <div className="font-body text-white text-sm">Рекомендованные юристы по Трудовому праву по версии Право.ру</div>
                   </div>
                 </div>
               </div>
