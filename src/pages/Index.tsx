@@ -326,7 +326,7 @@ export default function Index() {
             <div className="relative">
               <div className="absolute -inset-4 bg-electric/5 blur-2xl rounded-full" />
               <div className="relative border border-border overflow-hidden">
-                <img src={TEAM_IMAGE} alt={`Команда ${FIRM_NAME}`} className="w-full h-80 md:h-[500px] object-cover object-center" />
+                <img src={TEAM_IMAGE} alt={`Команда ${FIRM_NAME}`} className="w-full object-contain object-top bg-[#0f1117]" style={{ maxHeight: "600px" }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="border border-electric/30 bg-background/80 backdrop-blur-sm px-5 py-4">
