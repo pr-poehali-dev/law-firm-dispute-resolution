@@ -172,7 +172,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center cursor-pointer" onClick={() => scrollTo("home")}>
-              <img src="https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/bucket/3eb48ec5-ecfa-4bc7-be65-10b50f977794.jpg" alt="AVG Consult" className="h-20 w-auto object-contain" />
+              <img src="https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/bucket/3eb48ec5-ecfa-4bc7-be65-10b50f977794.jpg" alt="AVG Consult" className="h-28 w-auto object-contain" />
             </div>
 
             <div className="hidden md:flex items-center gap-8">
