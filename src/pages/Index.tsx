@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { id: "about", label: "О фирме" },
   { id: "services", label: "Услуги" },
   { id: "cases", label: "Кейсы" },
-  { id: "team", label: "Специалисты" },
   { id: "contact", label: "Контакты" },
 ];
 
@@ -71,36 +70,7 @@ const CASES = [
   },
 ];
 
-const TEAM = [
-  {
-    name: "Александр Воронцов",
-    role: "Управляющий партнёр",
-    exp: "20 лет практики",
-    spec: "Арбитраж · Корпоративное право",
-    initial: "АВ",
-  },
-  {
-    name: "Марина Климова",
-    role: "Старший партнёр",
-    exp: "16 лет практики",
-    spec: "Уголовная защита · Налоги",
-    initial: "МК",
-  },
-  {
-    name: "Дмитрий Орлов",
-    role: "Партнёр",
-    exp: "12 лет практики",
-    spec: "M&A · Международное право",
-    initial: "ДО",
-  },
-  {
-    name: "Екатерина Соболева",
-    role: "Старший юрист",
-    exp: "9 лет практики",
-    spec: "Недвижимость · Договорная работа",
-    initial: "ЕС",
-  },
-];
+
 
 const STATS = [
   { value: "91%", label: "Выигранных дел" },
@@ -399,36 +369,6 @@ export default function Index() {
                   </div>
                   )}
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TEAM */}
-      <section id="team" className="py-24 md:py-32 bg-secondary/30 relative">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-8 h-px bg-electric" />
-              <span className="font-display text-electric text-xs tracking-[0.3em] uppercase">Команда</span>
-              <div className="w-8 h-px bg-electric" />
-            </div>
-            <h2 className="font-display font-semibold text-4xl md:text-5xl text-white">
-              Специалисты
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {TEAM.map((t, i) => (
-              <div key={i} className="card-hover border border-border bg-card p-6 group text-center">
-                <div className="w-16 h-16 mx-auto mb-5 bg-electric/10 border border-electric/30 flex items-center justify-center group-hover:bg-electric group-hover:border-electric transition-all duration-300">
-                  <span className="font-display font-semibold text-electric group-hover:text-white transition-colors duration-300 text-lg">{t.initial}</span>
-                </div>
-                <h3 className="font-display font-medium text-white text-base mb-1">{t.name}</h3>
-                <div className="font-display text-electric text-xs tracking-wide mb-3 uppercase">{t.role}</div>
-                <div className="font-body font-light text-muted-foreground text-xs mb-3">{t.exp}</div>
-                <div className="font-body text-muted-foreground/60 text-xs leading-relaxed border-t border-border pt-3">{t.spec}</div>
               </div>
             ))}
           </div>
