@@ -107,6 +107,8 @@ export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", phone: "", topic: "", message: "" });
   const [formSent, setFormSent] = useState(false);
+  const [formLoading, setFormLoading] = useState(false);
+  const [formError, setFormError] = useState("");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -115,9 +117,23 @@ export default function Index() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSent(true);
+    setFormLoading(true);
+    setFormError("");
+    try {
+      const res = await fetch("https://functions.poehali.dev/2ac1c282-0467-4909-8a95-51ae348f30fe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Ошибка отправки");
+      setFormSent(true);
+    } catch {
+      setFormError("Не удалось отправить заявку. Попробуйте позже или позвоните нам.");
+    } finally {
+      setFormLoading(false);
+    }
   };
 
   return (
@@ -470,10 +486,14 @@ export default function Index() {
                   </div>
                   <button
                     type="submit"
-                    className="shimmer-btn text-white font-display font-medium tracking-widest uppercase py-4 text-sm hover:shadow-xl hover:shadow-electric/25 transition-all duration-300 hover:-translate-y-0.5 mt-2"
+                    disabled={formLoading}
+                    className="shimmer-btn text-white font-display font-medium tracking-widest uppercase py-4 text-sm hover:shadow-xl hover:shadow-electric/25 transition-all duration-300 hover:-translate-y-0.5 mt-2 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Отправить заявку
+                    {formLoading ? "Отправка..." : "Отправить заявку"}
                   </button>
+                  {formError && (
+                    <p className="font-body text-xs text-red-400 text-center">{formError}</p>
+                  )}
                   <p className="font-body text-xs text-muted-foreground text-center">
                     Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
                   </p>
