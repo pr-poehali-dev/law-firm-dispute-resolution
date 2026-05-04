@@ -171,11 +171,8 @@ export default function Index() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("home")}>
-              <div className="gradient-electric flex items-center justify-center px-2 py-1">
-                <span className="font-display font-bold text-white text-sm tracking-wider">AVG</span>
-              </div>
-              <span className="font-display font-light text-base tracking-[0.15em] text-white/80">Consult</span>
+            <div className="flex items-center cursor-pointer" onClick={() => scrollTo("home")}>
+              <img src="https://cdn.poehali.dev/projects/73573107-8c8d-4a7a-b8b7-b9573a39619b/bucket/3eb48ec5-ecfa-4bc7-be65-10b50f977794.jpg" alt="AVG Consult" className="h-12 w-auto object-contain" />
             </div>
 
             <div className="hidden md:flex items-center gap-8">
