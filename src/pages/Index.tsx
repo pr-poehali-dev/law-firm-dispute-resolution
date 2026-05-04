@@ -468,9 +468,7 @@ export default function Index() {
                       <option>Арбитражные споры</option>
                       <option>Корпоративное право</option>
                       <option>Договорная работа</option>
-                      <option>Уголовная защита</option>
-                      <option>Международное право</option>
-                      <option>Недвижимость</option>
+
                       <option>Другое</option>
                     </select>
                   </div>
