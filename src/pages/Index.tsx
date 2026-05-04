@@ -60,7 +60,7 @@ const CASES = [
     title: "Экономия клиенту 70 млн руб.",
     result: "Победа",
     desc: "Успешно отклонили претензии недобросовестного контрагента к одному из ведущих производителей моторных масел.",
-    duration: "8 месяцев",
+    duration: "",
   },
   {
     category: "Корпоративный спор",
@@ -406,10 +406,12 @@ export default function Index() {
                   </div>
                   <h3 className="font-display font-medium text-white text-xl mb-3 group-hover:text-electric transition-colors duration-200">{c.title}</h3>
                   <p className="font-body font-light text-muted-foreground text-sm leading-relaxed mb-5">{c.desc}</p>
+                  {c.duration && (
                   <div className="flex items-center gap-2 text-muted-foreground text-xs">
                     <Icon name="Clock" size={12} />
                     <span className="font-body">{c.duration}</span>
                   </div>
+                  )}
                 </div>
               </div>
             ))}
